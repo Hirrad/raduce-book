@@ -22,6 +22,7 @@ const reducer = (state = initialState, action) => {
                 loading: true
             };
         case 'ON_ADD_SHOP_CARD':
+            console.log(state.itemsShopList)
             return changeQuantityBook(state.books,
                 state.itemsShopList,
                 action.payload,
